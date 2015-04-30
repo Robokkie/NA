@@ -21,7 +21,7 @@ class Function:
 def write_csv(filename, rows):
 	with open(filename,'w') as csv_file:
 		writer=csv.writer(csv_file)
-		csv_header=("number of process", "approximation")
+		csv_header=("n", "xn")
 		writer.writerow(csv_header)
 		for row in rows:
 			writer.writerow(row)
